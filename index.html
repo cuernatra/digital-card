@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Pyyntö hakukoneille. Tämä EI tee sivusta yksityistä. -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Oma digitaalinen korttini.">
+  <!-- Muuta selaimen välilehdellä näkyvä nimi tästä. -->
+  <title>Oma kortti</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <!-- Vaihda nimikirjaimet, nimi ja esittely omiksesi. -->
+    <div class="avatar" aria-hidden="true">MO</div>
+    <p class="eyebrow">KIVA KUN SKANNASIT</p>
+    <h1>Moi, olen<br><span>Sinun nimesi.</span></h1>
+    <p class="intro">Tervetuloa omalle kortilleni! Kirjoita tähän lyhyt esittely itsestäsi tai kortin tarkoituksesta.</p>
+    <!-- Korvaa esimerkkiosoite omalla julkisella yhteystiedollasi. -->
+    <a class="button" href="mailto:sinun.nimesi@example.com">Ota yhteyttä <span aria-hidden="true">↗</span></a>
+    <!-- Voit kopioida linkkirivin ja lisätä omia linkkejä. -->
+    <nav aria-label="Omat linkit">
+      <a class="link" href="https://github.com/cuernatra">GitHub <span aria-hidden="true">↗</span></a>
+      <button class="link" id="copy-link" type="button" hidden>Kopioi kortin linkki <span aria-hidden="true">＋</span></button>
+    </nav>
+    <p id="copy-status" role="status" aria-live="polite"></p>
+    <footer>Oma kortti <span aria-hidden="true">·</span> <span id="year">2026</span></footer>
+  </main>
+</body>
+</html>
