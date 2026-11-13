@@ -1,32 +1,74 @@
 <!doctype html>
-<html lang="fi">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Pyyntö hakukoneille. Tämä EI tee sivusta yksityistä. -->
+  <!-- Hakukonepyyntö ei estä linkin saaneita avaamasta sivua. -->
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="description" content="Oma digitaalinen korttini.">
-  <!-- Muuta selaimen välilehdellä näkyvä nimi tästä. -->
-  <title>Oma kortti</title>
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Joel Turkka — Master's Student in Information Technology at Tampere University. CV, project portfolio and contact details.">
+  <title>Joel Turkka | Information Technology</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="card">
-    <!-- Vaihda nimikirjaimet, nimi ja esittely omiksesi. -->
-    <div class="avatar" aria-hidden="true">MO</div>
-    <p class="eyebrow">KIVA KUN SKANNASIT</p>
-    <h1>Moi, olen<br><span>Sinun nimesi.</span></h1>
-    <p class="intro">Tervetuloa omalle kortilleni! Kirjoita tähän lyhyt esittely itsestäsi tai kortin tarkoituksesta.</p>
-    <!-- Korvaa esimerkkiosoite omalla julkisella yhteystiedollasi. -->
-    <a class="button" href="mailto:sinun.nimesi@example.com">Ota yhteyttä <span aria-hidden="true">↗</span></a>
-    <!-- Voit kopioida linkkirivin ja lisätä omia linkkejä. -->
-    <nav aria-label="Omat linkit">
-      <a class="link" href="https://github.com/cuernatra">GitHub <span aria-hidden="true">↗</span></a>
-      <button class="link" id="copy-link" type="button" hidden>Kopioi kortin linkki <span aria-hidden="true">＋</span></button>
-    </nav>
-    <p id="copy-status" role="status" aria-live="polite"></p>
-    <footer>Oma kortti <span aria-hidden="true">·</span> <span id="year">2026</span></footer>
+  <main class="card" aria-labelledby="name">
+    <header class="masthead">
+      <!-- Vaihda nimikirjaimet tästä, jos muokkaat pohjaa toiselle henkilölle. -->
+      <span class="monogram" aria-hidden="true">JT<span>.</span></span>
+      <p class="eyebrow">PROFESSIONAL PROFILE</p>
+    </header>
+
+    <section class="profile" aria-labelledby="name">
+      <!-- Nimi, titteli ja yliopisto ovat suoraan muokattavaa HTML:ää. -->
+      <h1 id="name">Joel Turkka<span class="accent">.</span></h1>
+      <p class="title">Master’s Student in<br>Information Technology</p>
+      <p class="affiliation">Tampere University <span aria-hidden="true">/</span> Finland</p>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">ABOUT</h2>
+      <!-- ESITTELY: muokkaa tämän kappaleen sisältöä vapaasti. -->
+      <p>I am a master’s student in Information Technology with a focus on software development. My interests include artificial intelligence, game development and building practical projects that connect software with the physical world.</p>
+      <!-- Osaamiset voi poistaa tai vaihtaa omiin painotuksiin. -->
+      <ul class="skills" aria-label="Programming languages">
+        <li>Python</li><li>C++</li><li>C</li><li>SQL</li>
+      </ul>
+    </section>
+
+    <section class="resources" aria-labelledby="resources-title">
+      <h2 id="resources-title">DOCUMENTS &amp; PROFILES</h2>
+      <!-- PYSYVÄT PDF-LINKIT: korvaa files-kansion tiedostot samoilla nimillä.
+           Älä lisää download-attribuuttia, jos haluat PDF:n avautuvan selaimeen. -->
+      <a class="resource" href="files/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="resource-number" aria-hidden="true">01</span>
+        <span class="resource-copy"><strong>Curriculum vitae</strong><span>Education, skills &amp; experience</span></span>
+        <span class="resource-type">PDF <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="resource" href="files/portfolio.pdf" target="_blank" rel="noopener noreferrer">
+        <span class="resource-number" aria-hidden="true">02</span>
+        <span class="resource-copy"><strong>Project portfolio</strong><span>Selected personal &amp; university projects</span></span>
+        <span class="resource-type">PDF <span aria-hidden="true">↗</span></span>
+      </a>
+      <!-- Profiililinkit löytyivät CV:stä. -->
+      <a class="resource" href="https://github.com/cuernatra" target="_blank" rel="noopener noreferrer">
+        <span class="resource-number" aria-hidden="true">03</span>
+        <span class="resource-copy"><strong>GitHub</strong><span>Code &amp; repositories</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="resource" href="https://www.linkedin.com/in/joel-turkka/" target="_blank" rel="noopener noreferrer">
+        <span class="resource-number" aria-hidden="true">04</span>
+        <span class="resource-copy"><strong>LinkedIn</strong><span>Professional profile</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">GET IN TOUCH</h2>
+      <!-- Vaihda tarvittaessa sekä näkyvä osoite että mailto-linkki. -->
+      <a class="email" href="mailto:joel.turkka@gmail.com">joel.turkka@gmail.com <span aria-hidden="true">↗</span></a>
+    </section>
+    <footer><span>© <span id="year">2026</span> Joel Turkka</span><span>Digital card</span></footer>
   </main>
 </body>
 </html>
